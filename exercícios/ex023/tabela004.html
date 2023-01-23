@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de filmes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption {
+            text-align: center;
+            background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(37, 37, 37), rgb(24, 23, 23), rgb(27, 27, 27));
+            border: 1px solid black;
+            border-bottom: 0px solid black;
+            color: white;
+            font-size: larger;
+            font-weight: 900;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th {
+            border: 1px solid black;
+            width: 100px;
+            text-align: center;
+            padding: 10px;
+        }
+
+        td {
+            border: 1px solid black;
+            width: 100px;
+            text-align: left;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercício Tabela</h1>
+    <table>
+        <caption>Filmes favorítos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana</td>
+                <td>filme1</td>
+                <td>filme2</td>
+                <td>filme3</td>
+            </tr>
+            <tr>
+                <td>Beatriz</td>
+                <td>filme1</td>
+                <td>filme2</td>
+                <td>filme3</td>
+            </tr>
+            <tr>
+                <td>Carla</td>
+                <td>filme1</td>
+                <td>filme2</td>
+                <td>filme3</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup ">Homens</th>
+                <td>Bruno</td>
+                <td>filme1</td>
+                <td>filme2</td>
+                <td>filme3</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>filme1</td>
+                <td>filme2</td>
+                <td>filme3</td>
+            </tr>
+            <td>felippe</td>
+            <td>filme1</td>
+            <td>filme2</td>
+            <td>filme3</td>
+        </tbody>
+        <tfoot>
+            <th colspan="4" scope="row">TOTAL</th>
+            <td>0000</td>
+        </tfoot>
+    </table>
+</body>
+
+</html>
