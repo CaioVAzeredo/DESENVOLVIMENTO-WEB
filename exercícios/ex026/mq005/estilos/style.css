@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "UTF-8"; 
 *{
  margin: 0px;
  padding: 0px;
@@ -20,7 +20,7 @@ menu{
 }
 menu > ul{
      list-style-type: none;
-}
+} 
 menu > ul > li > a{
     display: block;
     padding: 10px;
